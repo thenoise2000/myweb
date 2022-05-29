@@ -10,9 +10,9 @@ pipeline {
                 git credentialsId: 'github-private-key', url: 'https://github.com/thenoise2000/myweb'
             }
         }
-        stage("Maven Build"){
+        stage("Example"){
             steps{
-                sh "mvn clean package"
+                sh "mvn --version"
             }
         }
     }
