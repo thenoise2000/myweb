@@ -2,10 +2,11 @@ pipeline {
     agent any
     
     tools {
-        maven '3.6.3'
+        maven "3.6.3"        
     }
     environment {
-        PATH="/opt/apache-maven-3.6.3/bin:$PATH"
+        PATH = ${MAVEN_HOME}/bin:${PATH}
+        MAVEN_HOME = C:\maven
     }
     stages{
         stage("Git Checkout"){
