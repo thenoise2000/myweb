@@ -5,7 +5,7 @@ pipeline {
         maven '3.6.3'
     }
     environment {
-        PATH='C:\apache-maven-3.6.3'
+        PATH='C:/apache-maven-3.6.3'
     }
     stages{
         stage("Git Checkout"){
