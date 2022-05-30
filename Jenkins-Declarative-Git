@@ -4,6 +4,9 @@ pipeline {
     tools {
         maven '3.6.3'
     }
+    environment {
+        JAVA_HOME='C:\Program Files (x86)\Java\jdk1.8.0_144'
+    }
     stages{
         stage("Git Checkout"){
             steps{
